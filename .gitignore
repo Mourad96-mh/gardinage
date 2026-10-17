@@ -1,0 +1,10 @@
+node_modules/
+.next/
+out/
+.vercel/
+*.tsbuildinfo
+
+# Pièces brutes du client : pas dans un dépôt public
+file.txt
+WhatsApp Image *.jpeg
+site/assets-src/reference-cabsec.jpeg
