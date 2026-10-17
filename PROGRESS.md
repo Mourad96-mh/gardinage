@@ -44,6 +44,13 @@ Construit et vérifié : 21 pages indexables, 0 défaut SEO (titres ≤ 60, desc
 
 Search Console + envoi du sitemap, fiche Google Business Profile (catégorie « Service de sécurité », zone desservie), inscriptions annuaires (PagesJaunes, 118712) avec le même NAP, demande d'avis clients.
 
+## Dépôt et déploiement
+
+- Dépôt propre à ce dossier (imbriqué dans le dépôt Bureau) : **github.com/Mourad96-mh/gardinage** (public, branche `main`). Le credential helper gh est posé en local : faire `gh auth switch -u Mourad96-mh` avant de pousser.
+- Exclus du dépôt public : `file.txt`, les images WhatsApp d'origine et la plaquette CABSEC (document d'un concurrent).
+- Vercel, équipe `mourad2`, projet `gardinage`, **connecté au dépôt** avec Root Directory = `site` : chaque push sur `main` redéploie.
+- En ligne : **https://gardinage.vercel.app** (provisoire, sans le n° CNAPS : à ne pas communiquer publiquement avant de l'avoir renseigné).
+
 ## Pas encore fait
 
-Pas de dépôt git propre ni de déploiement (rien n'a été poussé ni publié). Pas de page Réalisations/Avis tant qu'il n'y a ni références ni avis réels.
+Pas de page Réalisations/Avis tant qu'il n'y a ni références ni avis réels. Nom de domaine à brancher dans Vercel puis à reporter dans `site.baseUrl`.
