@@ -52,7 +52,9 @@ export function businessLd() {
           addressRegion: site.address.region,
           addressCountry: site.address.country,
         },
-        ...(site.siren ? { identifier: { '@type': 'PropertyValue', propertyID: 'SIREN', value: site.siren } } : {}),
+        ...(site.siren
+          ? { identifier: { '@type': 'PropertyValue', propertyID: 'SIREN', value: site.siren.replace(/\s/g, '') } }
+          : {}),
         areaServed: areaServed(),
         knowsAbout: [
           'Gardiennage',

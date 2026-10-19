@@ -41,7 +41,7 @@ export default function LegalPage() {
             <br />
             Siège social : <Val v={site.address.street ? address : ''} />
             <br />
-            SIREN : <Val v={site.siren} /> — <Val v={site.rcs} />
+            SIREN : <Val v={site.siren} /> — SIRET : <Val v={site.siret} /> — <Val v={site.rcs} />
             <br />
             Téléphone : {phoneDisplay() || <Val v="" />} — E-mail : {site.email}
             <br />

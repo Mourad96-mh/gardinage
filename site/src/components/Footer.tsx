@@ -72,7 +72,7 @@ export function Footer() {
         <p>
           {site.legalName}
           {site.legalForm ? ` — ${site.legalForm}` : ''}
-          {site.rcs ? ` — ${site.rcs}` : ''}. Autorisation d’exercer délivrée par le CNAPS
+          {site.rcs ? ` — ${site.rcs}` : site.siren ? ` — SIREN ${site.siren}` : ''}. Autorisation d’exercer délivrée par le CNAPS
           {site.cnapsNumber ? ` n° ${site.cnapsNumber}` : ' (numéro en cours de renseignement)'}.
         </p>
         <p>{cnapsNotice}</p>

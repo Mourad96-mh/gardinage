@@ -27,10 +27,11 @@ export const site = {
     country: 'FR',
   },
   /** Autorisation d'exercer délivrée par le CNAPS, ex. « AUT-069-2119-02-03-2019xxxxxxx ». */
-  cnapsNumber: '' as string,
+  cnapsNumber: 'AUT-0983834' as string,
   /** Identité légale (mentions légales). */
   legalForm: '' as string, // ex. SASU au capital de …
-  siren: '' as string,
+  siren: '942 646 597' as string,
+  siret: '942 646 597 00016' as string,
   rcs: '' as string, // ex. RCS Lyon 000 000 000
   director: '' as string, // directeur de la publication
   host: '' as string, // hébergeur : nom, adresse, téléphone
