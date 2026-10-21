@@ -7,9 +7,9 @@ import { Breadcrumbs, CtaBand, JsonLd } from '@/components/bits';
 import { Icon } from '@/components/Icon';
 
 export const metadata = pageMeta({
-  title: 'Zones d’intervention : Lyon, Métropole et Rhône | RSP',
+  title: 'Zones d’intervention : Lyon, Rhône et toute la France | RSP',
   description:
-    'Agents de sécurité à Lyon, Villeurbanne, Vénissieux, Vaulx-en-Velin, Bron, Saint-Priest, Caluire et dans tout le Rhône jusqu’à Villefranche-sur-Saône.',
+    'Agents de sécurité à Lyon, Villeurbanne, Vénissieux, Vaulx-en-Velin, Bron, Saint-Priest, Caluire, dans tout le Rhône et partout en France. Un agent sur site en moins d’une heure, 24h/24.',
   path: '/zones-intervention/',
 });
 
@@ -34,6 +34,11 @@ const groups = [
     cities: site.zones.rhone,
     text: 'Au-delà de la Métropole, nous sécurisons entreprises, chantiers et événements dans le Rhône, du Beaujolais à l’Ouest lyonnais, avec des missions planifiées ou ponctuelles.',
   },
+  {
+    title: 'Partout en France',
+    cities: [] as string[],
+    text: 'Votre site est hors du Rhône ? Nous intervenons partout en France, 24h/24 et 7j/7, 365 jours par an : un agent de sécurité sur votre site en moins d’une heure, pour une mission ponctuelle comme pour un contrat.',
+  },
 ];
 
 export default function ZonesPage() {
@@ -44,10 +49,10 @@ export default function ZonesPage() {
         <div className="container">
           <Breadcrumbs items={crumbs} />
           <p className="eyebrow">Zones d’intervention</p>
-          <h1 className="page-head__title">Sécurité privée à Lyon, dans la Métropole et le Rhône</h1>
+          <h1 className="page-head__title">Sécurité privée à Lyon et partout en France</h1>
           <p className="page-head__lead">
-            Rhône Sécu Protection intervient sur tout le territoire du Rhône. Une ville ne figure pas dans la liste ?
-            Contactez-nous : nous étudions chaque demande.
+            Rhône Sécu Protection intervient à Lyon, dans tout le Rhône et partout en France, 24h/24 et 7j/7. Votre ville ne
+            figure pas dans la liste ? Contactez-nous : un agent peut être sur place en moins d’une heure.
           </p>
         </div>
       </header>
@@ -58,13 +63,15 @@ export default function ZonesPage() {
             <article key={g.title} className="zone-group">
               <h2>{g.title}</h2>
               <p>{g.text}</p>
-              <ul className="zones">
+              {g.cities.length > 0 && (
+                <ul className="zones">
                 {g.cities.map((c) => (
                   <li key={c}>
                     <Icon name="pin" size={16} /> {c}
                   </li>
                 ))}
-              </ul>
+                </ul>
+              )}
             </article>
           ))}
         </div>
@@ -73,15 +80,15 @@ export default function ZonesPage() {
       <section className="section section--mist">
         <div className="container">
           <div className="section__head">
-            <p className="eyebrow">Sur toutes ces communes</p>
-            <h2 className="section__title">Toutes nos prestations, partout dans le Rhône</h2>
+            <p className="eyebrow">Partout où vous êtes</p>
+            <h2 className="section__title">Toutes nos prestations, partout en France</h2>
           </div>
           <ul className="checklist" style={{ columns: '18rem', display: 'block' }}>
             {services.map((s) => (
               <li key={s.slug} style={{ marginBottom: '0.65rem', breakInside: 'avoid' }}>
                 <Icon name="check" size={18} />{' '}
                 <Link href={s.path}>
-                  {s.short} à Lyon et dans le Rhône
+                  {s.short} à Lyon et partout en France
                 </Link>
               </li>
             ))}
@@ -89,7 +96,7 @@ export default function ZonesPage() {
         </div>
       </section>
 
-      <CtaBand title="Votre site est dans le Rhône ?" />
+      <CtaBand title="Votre site est à Lyon ou ailleurs en France ?" />
       <JsonLd data={breadcrumbLd(crumbs)} />
     </>
   );

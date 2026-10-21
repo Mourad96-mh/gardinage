@@ -12,13 +12,14 @@ const RHONE = {
   containedInPlace: { '@type': 'Country', name: 'France', identifier: 'FR' },
 };
 
-/** Communes desservies : chaque ville rattachée au Rhône, lui-même en France. */
+/** Zone desservie : les communes du Rhône (chacune rattachée au département), puis toute la France. */
 function areaServed() {
   const cities = [...new Set(['Lyon', ...site.zones.metropole, ...site.zones.rhone])];
   return [
     ...cities.map((name) => ({ '@type': 'City', name, containedInPlace: RHONE })),
     { '@type': 'AdministrativeArea', name: 'Métropole de Lyon' },
     RHONE,
+    { '@type': 'Country', name: 'France', identifier: 'FR' },
   ];
 }
 
@@ -38,7 +39,7 @@ export function businessLd() {
         name: site.name,
         alternateName: site.shortName,
         description:
-          'Entreprise de sécurité privée à Lyon et dans le Rhône : gardiennage, agents de sécurité, maître-chien, sécurité incendie SSIAP, sécurité événementielle, rondes et intervention sur alarme, prévention des vols en magasin, gardiennage de chantier.',
+          'Entreprise de sécurité privée à Lyon et partout en France, disponible 24h/24 et 7j/7 : gardiennage, agents de sécurité, maître-chien, sécurité incendie SSIAP, sécurité événementielle, rondes et intervention sur alarme, prévention des vols en magasin, gardiennage de chantier.',
         url: canonical('/'),
         logo: { '@type': 'ImageObject', url: `${site.baseUrl}/brand/logo-rsp.png` },
         image: `${site.baseUrl}${media.hero.src}`,

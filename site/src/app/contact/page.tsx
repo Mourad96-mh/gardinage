@@ -10,7 +10,7 @@ import { ContactForm } from '@/components/ContactForm';
 export const metadata = pageMeta({
   title: 'Devis sécurité privée gratuit à Lyon | Rhône Sécu Protection',
   description:
-    'Demandez un devis gratuit pour du gardiennage, un maître-chien, des agents SSIAP, la sécurité d’un événement ou des rondes à Lyon et dans le Rhône.',
+    'Demandez un devis gratuit pour du gardiennage, un maître-chien, des agents SSIAP, la sécurité d’un événement ou des rondes à Lyon et partout en France. Disponibles 24h/24 et 7j/7.',
   path: '/contact/',
 });
 

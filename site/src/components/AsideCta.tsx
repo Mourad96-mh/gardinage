@@ -7,7 +7,7 @@ export function AsideCta({ title = 'Besoin d’agents ?' }: { title?: string }) 
   return (
     <div className="aside-cta">
       <p className="aside-cta__title">{title}</p>
-      <p>Devis gratuit et détaillé, à Lyon et dans tout le Rhône.</p>
+      <p>Devis gratuit et détaillé, à Lyon et partout en France. Disponibles 24h/24 et 7j/7.</p>
       <Link href="/contact/" className="btn btn--primary btn--block">
         Demander un devis
       </Link>

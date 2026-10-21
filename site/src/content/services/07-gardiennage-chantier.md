@@ -5,7 +5,7 @@ meta_description: Gardiennage de chantier à Lyon : agents de nuit, maître-chie
 mot_cle: gardiennage de chantier Lyon
 ---
 
-# Gardiennage de chantier à Lyon et dans le Rhône
+# Gardiennage de chantier à Lyon et partout en France
 
 Engins, outillage, câbles en cuivre, matériaux stockés : un chantier est une cible facile, surtout la nuit et le week-end. Un vol ne coûte pas seulement le matériel : il retarde le planning, déclenche des pénalités et décourage les équipes. Rhône Sécu Protection protège les chantiers des entreprises du BTP, des promoteurs et des maîtres d’ouvrage dans la Métropole de Lyon et le Rhône.
 
@@ -43,4 +43,4 @@ Dès que des matériaux ou des engins de valeur restent sur place hors des heure
 Pour un chantier étendu ou isolé, nous recommandons un maître-chien ou une liaison régulière avec notre permanence, afin que l’agent ne soit jamais sans contact.
 
 **Pouvez-vous intervenir avec un délai court ?**
-Oui, dans la mesure de nos disponibilités. Précisez la date de démarrage souhaitée dans votre demande de devis.
+Oui. Nous sommes disponibles 24h/24 et 7j/7, et un agent peut être sur votre chantier en moins d’une heure, à Lyon et partout en France.

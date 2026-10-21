@@ -66,8 +66,8 @@ export default function AboutPage() {
               connaissent leurs consignes, et un interlocuteur qui répond quand il y a un problème.
             </p>
             <p>
-              C’est ce que nous construisons, mission après mission : une sécurité de proximité, à Lyon et dans tout le
-              Rhône, avec des agents qualifiés et une organisation qui laisse peu de place à l’improvisation.
+              C’est ce que nous construisons, mission après mission : une sécurité réactive, à Lyon et partout en
+              France, 24h/24 et 7j/7, avec des agents qualifiés et une organisation qui laisse peu de place à l’improvisation.
             </p>
           </div>
           <Image

@@ -1,7 +1,7 @@
 ---
 title: Maître-chien à Lyon : agent cynophile de sécurité | RSP
 slug: /services/agent-cynophile-maitre-chien/
-meta_description: Agent cynophile et maître-chien à Lyon et dans le Rhône : surveillance de nuit, sites étendus, chantiers, entrepôts. Devis gratuit.
+meta_description: Agent cynophile et maître-chien à Lyon et partout en France : surveillance de nuit, sites étendus, chantiers, entrepôts. Devis gratuit.
 mot_cle: maître-chien Lyon
 ---
 

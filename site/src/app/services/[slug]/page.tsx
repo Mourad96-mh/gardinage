@@ -48,7 +48,7 @@ export default async function ServicePage({ params }: Props) {
       <DocPage
         doc={s}
         crumbs={crumbs}
-        eyebrow="Service · Lyon et Rhône"
+        eyebrow="Service · Lyon et partout en France"
         image={media[s.image]}
         imageAlt={ALT[s.slug] ?? s.short}
         aside={<AsideCta />}

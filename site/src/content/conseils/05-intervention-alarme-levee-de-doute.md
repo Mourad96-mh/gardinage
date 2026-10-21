@@ -57,10 +57,10 @@ Elles interviennent sur une infraction constatée ou en cours. L’agent de séc
 ## Questions fréquentes
 
 **Combien de temps pour qu’un agent arrive ?**
-Le délai dépend de la distance et de l’heure. Une société implantée localement, avec des agents déjà en ronde dans le secteur, est généralement plus rapide.
+Le délai dépend de la distance et de l’heure. Chez Rhône Sécu Protection, disponibles 24h/24 et 7j/7, un agent est sur votre site en moins d’une heure, à Lyon et partout en France.
 
 **Peut-on souscrire l’intervention sans télésurveillance ?**
 Oui, si votre alarme peut nous prévenir (transmetteur, application) ou si vous nous appelez vous-même. Le plus efficace reste une alarme reliée à un télésurveilleur qui nous missionne.
 
 **Vous cherchez une société d’intervention à Lyon ?**
-Découvrez notre service [rondes de surveillance et intervention sur alarme](/services/rondes-intervention-alarme) dans la Métropole de Lyon et le Rhône.
+Découvrez notre service [rondes de surveillance et intervention sur alarme](/services/rondes-intervention-alarme) à Lyon et partout en France.

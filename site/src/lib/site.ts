@@ -11,7 +11,7 @@ export const site = {
   name: 'Rhône Sécu Protection',
   shortName: 'RSP',
   legalName: 'Rhône Sécu Protection',
-  tagline: 'Société de sécurité privée à Lyon et dans le Rhône',
+  tagline: 'Société de sécurité privée à Lyon et partout en France',
   // Domaine encore à choisir avec le client : sert aux canoniques, au sitemap et au JSON-LD.
   baseUrl: 'https://www.rhone-secu-protection.fr',
   email: 'lyoncasa@hotmail.fr',

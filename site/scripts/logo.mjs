@@ -78,11 +78,11 @@ const svg = `<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
   <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#10264a"/><stop offset="1" stop-color="${NAVY}"/></linearGradient></defs>
   <rect width="1200" height="630" fill="url(#g)"/>
   <rect x="0" y="606" width="1200" height="24" fill="#d4a62a"/>
-  <text x="600" y="250" font-family="Arial Narrow, Arial, sans-serif" font-weight="700" font-size="58" fill="#ffffff">Sécurité privée</text>
-  <text x="600" y="318" font-family="Arial Narrow, Arial, sans-serif" font-weight="700" font-size="58" fill="#ffffff">à Lyon et dans le Rhône</text>
+  <text x="600" y="250" font-family="Arial Narrow, Arial, sans-serif" font-weight="700" font-size="50" fill="#ffffff">Sécurité privée</text>
+  <text x="600" y="318" font-family="Arial Narrow, Arial, sans-serif" font-weight="700" font-size="50" fill="#ffffff">à Lyon et partout en France</text>
   <text x="600" y="390" font-family="Arial, sans-serif" font-size="28" fill="#e9c75f">Gardiennage · Maître-chien · SSIAP</text>
   <text x="600" y="430" font-family="Arial, sans-serif" font-size="28" fill="#e9c75f">Événementiel · Rondes · Prévention vol</text>
-  <text x="600" y="500" font-family="Arial, sans-serif" font-size="26" fill="#c9d3e3">Devis gratuit · Lyon, Métropole et Rhône</text>
+  <text x="600" y="500" font-family="Arial, sans-serif" font-size="26" fill="#c9d3e3">24h/24 · 7j/7 · Sur site en moins d’une heure</text>
 </svg>`;
 await sharp(Buffer.from(svg))
   .composite([{ input: logoOg, left: Math.round(300 - lm.width / 2), top: Math.round(303 - lm.height / 2) }])

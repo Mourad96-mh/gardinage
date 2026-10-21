@@ -12,7 +12,7 @@ import { ServiceCard, ServiceCtaCard, ArticleCard } from '@/components/cards';
 export const metadata = pageMeta({
   title: 'Société de sécurité privée à Lyon | Rhône Sécu Protection',
   description:
-    'Gardiennage, agents de sécurité, maître-chien, SSIAP, sécurité événementielle, rondes et intervention à Lyon et dans le Rhône. Devis gratuit.',
+    'Gardiennage, agents de sécurité, maître-chien, SSIAP, sécurité événementielle, rondes et intervention à Lyon et partout en France, 24h/24 et 7j/7. Devis gratuit.',
   path: '/',
 });
 
@@ -45,8 +45,8 @@ const reasons = [
   },
   {
     icon: 'pin' as const,
-    title: 'Une entreprise du Rhône',
-    text: 'Nous connaissons Lyon, sa métropole et ses zones d’activité : des agents proches de vos sites, des déplacements courts.',
+    title: 'Basés à Lyon, présents partout en France',
+    text: 'Nous connaissons Lyon et ses zones d’activité, et nous intervenons partout en France : un agent sur votre site en moins d’une heure, de jour comme de nuit.',
   },
 ];
 
@@ -72,7 +72,11 @@ const faqs = [
   },
   {
     q: 'Dans quelles villes intervenez-vous ?',
-    a: 'À Lyon et dans toute la Métropole (Villeurbanne, Vénissieux, Vaulx-en-Velin, Bron, Saint-Priest, Caluire…) ainsi que dans le département du Rhône, jusqu’à Villefranche-sur-Saône.',
+    a: 'À Lyon et dans toute la Métropole (Villeurbanne, Vénissieux, Vaulx-en-Velin, Bron, Saint-Priest, Caluire…) dans tout le Rhône et partout en France. Où que soit votre site, un agent peut être sur place en moins d’une heure.',
+  },
+  {
+    q: 'Êtes-vous joignables la nuit, le week-end et les jours fériés ?',
+    a: 'Oui. Nous sommes disponibles 24h/24 et 7j/7, 365 jours par an, jours fériés compris.',
   },
   {
     q: 'Quelle différence entre un agent de sécurité et une ronde ?',
@@ -103,13 +107,13 @@ export default function HomePage() {
         />
         <div className="hero__veil" aria-hidden="true" />
         <div className="container hero__content">
-          <p className="eyebrow eyebrow--light">Sécurité privée · Lyon &amp; Rhône</p>
+          <p className="eyebrow eyebrow--light">Sécurité privée · Lyon &amp; partout en France</p>
           <h1 className="hero__title">
             Société de sécurité privée à <em>Lyon</em>
           </h1>
           <p className="hero__lead">
             Rhône Sécu Protection protège vos sites, vos équipes et votre public : gardiennage, maître-chien, sécurité
-            incendie, événementiel, rondes et intervention sur alarme, dans la Métropole de Lyon et tout le Rhône.
+            incendie, événementiel, rondes et intervention sur alarme, à Lyon et partout en France, 24h/24 et 7j/7.
           </p>
           <div className="hero__actions">
             <Link href="/contact/" className="btn btn--primary">
@@ -130,10 +134,13 @@ export default function HomePage() {
               <Icon name="badge" size={18} /> Agents titulaires de la carte CNAPS
             </li>
             <li>
-              <Icon name="clock" size={18} /> Jour, nuit, week-ends et jours fériés
+              <Icon name="clock" size={18} /> Disponibles 24h/24 et 7j/7
             </li>
             <li>
-              <Icon name="check" size={18} /> Missions ponctuelles ou contrats
+              <Icon name="check" size={18} /> Intervention 365 jours par an
+            </li>
+            <li>
+              <Icon name="bolt" size={18} /> Un agent sur votre site en moins d’une heure, à Lyon et partout en France
             </li>
           </ul>
         </div>
@@ -262,10 +269,10 @@ export default function HomePage() {
           />
           <div>
             <p className="eyebrow">Zones d’intervention</p>
-            <h2 className="section__title">Lyon, la Métropole et tout le Rhône</h2>
+            <h2 className="section__title">Lyon, le Rhône et partout en France</h2>
             <p>
-              Nos agents interviennent dans les 9 arrondissements de Lyon, dans les communes de la Métropole et dans le
-              département du Rhône.
+              Nos agents interviennent dans les 9 arrondissements de Lyon, dans les communes de la Métropole, dans tout le
+              Rhône et partout en France, avec un agent sur votre site en moins d’une heure.
             </p>
             <ul className="zones" style={{ marginBottom: '1.5rem' }}>
               {mainCities.map((c) => (

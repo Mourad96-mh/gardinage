@@ -1,7 +1,7 @@
 ---
 title: Gardiennage à Lyon : agents de sécurité qualifiés | RSP
 slug: /services/gardiennage-agent-de-securite/
-meta_description: Gardiennage à Lyon et dans le Rhône : surveillance de site, contrôle d’accès, accueil. Agents titulaires de la carte CNAPS. Devis gratuit.
+meta_description: Gardiennage à Lyon et partout en France : surveillance de site, contrôle d’accès, accueil. Agents titulaires de la carte CNAPS. Devis gratuit.
 mot_cle: gardiennage Lyon
 ---
 

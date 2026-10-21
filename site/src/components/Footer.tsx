@@ -15,7 +15,7 @@ export function Footer() {
         <div className="footer__about">
           <Logo />
           <p>
-            Entreprise de sécurité privée à Lyon et dans le Rhône. Gardiennage, maître-chien, sécurité incendie,
+            Entreprise de sécurité privée à Lyon et partout en France, 24h/24 et 7j/7. Gardiennage, maître-chien, sécurité incendie,
             événementiel, rondes et intervention.
           </p>
           <div className="footer__contact">

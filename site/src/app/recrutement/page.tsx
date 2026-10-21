@@ -39,7 +39,7 @@ export default function RecrutementPage() {
           <p className="eyebrow">Recrutement</p>
           <h1 className="page-head__title">Rejoignez Rhône Sécu Protection</h1>
           <p className="page-head__lead">
-            Nous recherchons régulièrement des agents sérieux et qualifiés pour des missions à Lyon et dans le Rhône,
+            Nous recherchons régulièrement des agents sérieux et qualifiés pour des missions à Lyon et partout en France,
             en poste fixe ou en renfort ponctuel.
           </p>
         </div>
