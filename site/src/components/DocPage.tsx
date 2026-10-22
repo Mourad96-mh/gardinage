@@ -46,6 +46,7 @@ export function DocPage({
           alt={imageAlt}
           className="page-photo"
           priority
+          fetchPriority="high"
           sizes="(min-width: 1200px) 1140px, 100vw"
           />
         </div>

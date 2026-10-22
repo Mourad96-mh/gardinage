@@ -6,7 +6,7 @@ export function Logo({ large = false, withText = true }: { large?: boolean; with
       <img src="/brand/logo-rsp.png" width={251} height={240} alt="" className="logo__img" />
       {withText ? (
         <span className="logo__text">
-          <strong>Rhône Sécu</strong>
+          <strong>Rhône Sécu</strong>{' '}
           <small>Protection</small>
         </span>
       ) : null}

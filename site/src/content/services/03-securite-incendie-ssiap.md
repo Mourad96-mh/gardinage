@@ -1,7 +1,7 @@
 ---
 title: Agent SSIAP à Lyon : sécurité incendie ERP et IGH | RSP
 slug: /services/securite-incendie-ssiap/
-meta_description: Agents de sécurité incendie SSIAP 1, chefs d’équipe SSIAP 2 à Lyon : prévention, rondes, PC sécurité, évacuation dans les ERP et IGH, partout en France. Devis gratuit.
+meta_description: Agents SSIAP 1 et chefs d’équipe SSIAP 2 à Lyon et partout en France : prévention, rondes, PC sécurité, évacuation en ERP et IGH. Devis gratuit.
 mot_cle: agent SSIAP Lyon
 ---
 

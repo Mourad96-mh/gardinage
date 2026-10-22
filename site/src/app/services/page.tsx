@@ -7,7 +7,7 @@ import { ServiceCard, ServiceCtaCard } from '@/components/cards';
 export const metadata = pageMeta({
   title: 'Prestations de sécurité privée à Lyon | RSP',
   description:
-    'Gardiennage, maître-chien, SSIAP, événementiel, rondes, sécurité magasin et chantier : nos prestations de sécurité privée à Lyon et partout en France, 24h/24 et 7j/7.',
+    'Gardiennage, maître-chien, SSIAP, événementiel, rondes, magasin et chantier : nos prestations de sécurité privée à Lyon et partout en France, 24h/24.',
   path: '/services/',
 });
 

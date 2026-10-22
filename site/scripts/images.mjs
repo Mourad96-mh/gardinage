@@ -3,7 +3,7 @@
  *
  * Table slug -> fichier Commons : scripts/photos.json. Les originaux sont mis en cache dans
  * %TEMP%/rsp-photos (curl, car fetch de Node expire sur thumb.wikimedia.org).
- * Sorties : public/media/<slug>.webp (3:2, 1400 px ; hero 2000 px), src/lib/media.ts
+ * Sorties : public/media/<slug>.webp (3:2, 1400 px ; hero 2000 px) + <slug>-640/-960.webp, src/lib/media.ts
  * (dimensions réelles, zéro CLS) et public/media/CREDITS.json.
  *
  *   npm run images
@@ -23,6 +23,8 @@ const OUT = path.join(ROOT, 'public', 'media');
 mkdirSync(CACHE, { recursive: true });
 mkdirSync(OUT, { recursive: true });
 
+/** Doit rester aligné sur VARIANTS dans src/lib/image-loader.ts. */
+const VARIANTS = [640, 960];
 const photos = JSON.parse(readFileSync(path.join(ROOT, 'scripts', 'photos.json'), 'utf8'));
 const media = {};
 const credits = {};
@@ -40,6 +42,14 @@ for (const [slug, file] of Object.entries(photos)) {
     .resize(width, height, { fit: 'cover', position: 'attention' })
     .webp({ quality: slug === 'hero' ? 60 : 56 })
     .toFile(dest);
+  // Variantes réduites servies via srcset par src/lib/image-loader.ts (l'export statique n'a pas d'optimiseur).
+  // Le hero est servi en original (plein écran, object-fit: cover) : pas de variantes.
+  for (const w of slug === 'hero' ? [] : VARIANTS) {
+    await sharp(src)
+      .resize(w, Math.round((w * 2) / 3), { fit: 'cover', position: 'attention' })
+      .webp({ quality: 60 })
+      .toFile(path.join(OUT, `${slug}-${w}.webp`));
+  }
   media[slug] = { src: `/media/${slug}.webp`, width, height };
   credits[slug] = { file: `https://commons.wikimedia.org/wiki/File:${file.replace(/ /g, '_')}`, license: 'CC0 (Unsplash archive)' };
   console.log(`✓ ${slug}  ${Math.round(statSync(dest).size / 1024)} Ko`);
