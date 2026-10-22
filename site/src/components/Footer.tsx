@@ -63,7 +63,7 @@ export function Footer() {
           <p className="footer__title">Zones d’intervention</p>
           <p className="footer__zones">{mainCities.join(' · ')}</p>
           <Link href="/zones-intervention/" className="link-arrow">
-            Toutes les communes <Icon name="arrow" size={16} />
+            En savoir plus <Icon name="arrow" size={16} />
           </Link>
         </div>
       </div>

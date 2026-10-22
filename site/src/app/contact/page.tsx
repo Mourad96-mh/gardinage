@@ -10,7 +10,7 @@ import { ContactForm } from '@/components/ContactForm';
 export const metadata = pageMeta({
   title: 'Devis sécurité privée gratuit à Lyon | Rhône Sécu Protection',
   description:
-    'Demandez un devis gratuit pour du gardiennage, un maître-chien, des agents SSIAP, la sécurité d’un événement ou des rondes à Lyon et partout en France. Disponibles 24h/24 et 7j/7.',
+    'Devis gratuit : gardiennage, maître-chien, agents SSIAP, sécurité événementielle ou rondes à Lyon et partout en France. Disponibles 24h/24 et 7j/7.',
   path: '/contact/',
 });
 
@@ -69,7 +69,7 @@ export default function ContactPage() {
               <h2>Zones d’intervention</h2>
               <p className="footer__zones">{mainCities.join(' · ')}</p>
               <Link href="/zones-intervention/" className="link-arrow">
-                Toutes les communes <Icon name="arrow" size={16} />
+                En savoir plus <Icon name="arrow" size={16} />
               </Link>
             </div>
             <div className="contact__card">

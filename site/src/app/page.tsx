@@ -12,7 +12,7 @@ import { ServiceCard, ServiceCtaCard, ArticleCard } from '@/components/cards';
 export const metadata = pageMeta({
   title: 'Société de sécurité privée à Lyon | Rhône Sécu Protection',
   description:
-    'Gardiennage, agents de sécurité, maître-chien, SSIAP, sécurité événementielle, rondes et intervention à Lyon et partout en France, 24h/24 et 7j/7. Devis gratuit.',
+    'Gardiennage, agents de sécurité, maître-chien, SSIAP, événementiel, rondes et intervention à Lyon et partout en France, 24h/24 et 7j/7. Devis gratuit.',
   path: '/',
 });
 
@@ -72,7 +72,7 @@ const faqs = [
   },
   {
     q: 'Dans quelles villes intervenez-vous ?',
-    a: 'À Lyon et dans toute la Métropole (Villeurbanne, Vénissieux, Vaulx-en-Velin, Bron, Saint-Priest, Caluire…) dans tout le Rhône et partout en France. Où que soit votre site, un agent peut être sur place en moins d’une heure.',
+    a: 'À Lyon et partout en France. Où que soit votre site, un agent peut être sur place en moins d’une heure.',
   },
   {
     q: 'Êtes-vous joignables la nuit, le week-end et les jours fériés ?',
@@ -103,6 +103,9 @@ export default function HomePage() {
           alt="Place des Terreaux et Hôtel de Ville de Lyon la nuit"
           className="hero__img"
           priority
+          fetchPriority="high"
+          // Plein écran en object-fit: cover (portrait sur mobile) : l'original reste nécessaire.
+          unoptimized
           sizes="100vw"
         />
         <div className="hero__veil" aria-hidden="true" />
@@ -269,10 +272,10 @@ export default function HomePage() {
           />
           <div>
             <p className="eyebrow">Zones d’intervention</p>
-            <h2 className="section__title">Lyon, le Rhône et partout en France</h2>
+            <h2 className="section__title">Lyon et partout en France</h2>
             <p>
-              Nos agents interviennent dans les 9 arrondissements de Lyon, dans les communes de la Métropole, dans tout le
-              Rhône et partout en France, avec un agent sur votre site en moins d’une heure.
+              Nos agents interviennent à Lyon et partout en France, 24h/24 et 7j/7, avec un agent sur votre site en moins
+              d’une heure.
             </p>
             <ul className="zones" style={{ marginBottom: '1.5rem' }}>
               {mainCities.map((c) => (
@@ -282,7 +285,7 @@ export default function HomePage() {
               ))}
             </ul>
             <Link href="/zones-intervention/" className="btn btn--outline">
-              Toutes les communes desservies <Icon name="arrow" size={18} />
+              Nos zones d’intervention <Icon name="arrow" size={18} />
             </Link>
           </div>
         </div>

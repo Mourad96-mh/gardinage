@@ -1,4 +1,4 @@
-import { site, mainCities } from './site';
+import { site } from './site';
 import { canonical } from './seo';
 import { media } from './media';
 import type { Faq } from './content';
@@ -6,21 +6,11 @@ import type { Faq } from './content';
 const BUSINESS_ID = `${site.baseUrl}/#entreprise`;
 const WEBSITE_ID = `${site.baseUrl}/#site`;
 
-const RHONE = {
-  '@type': 'AdministrativeArea',
-  name: 'Rhône',
-  containedInPlace: { '@type': 'Country', name: 'France', identifier: 'FR' },
-};
+const FRANCE = { '@type': 'Country', name: 'France', identifier: 'FR' };
 
-/** Zone desservie : les communes du Rhône (chacune rattachée au département), puis toute la France. */
+/** Zone desservie : Lyon et toute la France. */
 function areaServed() {
-  const cities = [...new Set(['Lyon', ...site.zones.metropole, ...site.zones.rhone])];
-  return [
-    ...cities.map((name) => ({ '@type': 'City', name, containedInPlace: RHONE })),
-    { '@type': 'AdministrativeArea', name: 'Métropole de Lyon' },
-    RHONE,
-    { '@type': 'Country', name: 'France', identifier: 'FR' },
-  ];
+  return [{ '@type': 'City', name: 'Lyon', containedInPlace: FRANCE }, FRANCE];
 }
 
 /**
@@ -90,7 +80,7 @@ export function serviceLd(s: { h1: string; description: string; path: string; sh
     description: s.description,
     url: canonical(s.path),
     provider: { '@id': BUSINESS_ID },
-    areaServed: mainCities.map((name) => ({ '@type': 'City', name, containedInPlace: RHONE })),
+    areaServed: areaServed(),
   };
 }
 

@@ -36,7 +36,7 @@ Construit et vérifié : 21 pages indexables, 0 défaut SEO (titres ≤ 60, desc
 - [ ] Adresse : si elle est publique, le JSON-LD passe en `ProfessionalService` (meilleur pour le SEO local) et on crée la fiche Google Business Profile
 - [ ] Services réellement assurés (cynophile ? SSIAP ? chantier ?) : retirer un `.md` + son entrée `SERVICE_META` si non
 - [ ] Disponibilités réelles : le site dit « jour, nuit, week-ends et jours fériés » ; ajouter « 24 h/24 » et un délai d'intervention seulement si c'est vrai
-- [ ] Communes réellement desservies (`site.zones`)
+- [x] Zones : « Lyon et partout en France » (choix du client le 2026-10-22, listes de communes retirées)
 - [ ] Photos réelles (agents en tenue RSP, véhicules) pour remplacer les illustrations CC0
 - [ ] Hébergement : le formulaire ouvre la messagerie/WhatsApp (pas de serveur) ; à remplacer par un vrai envoi si l'hébergeur le permet
 

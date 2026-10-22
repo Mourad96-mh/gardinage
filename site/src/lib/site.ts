@@ -36,35 +36,12 @@ export const site = {
   director: '' as string, // directeur de la publication
   host: '' as string, // hébergeur : nom, adresse, téléphone
   locale: 'fr_FR',
-  /** Communes desservies (affichées en page Zones, pied de page et JSON-LD areaServed). À valider par le client. */
-  zones: {
-    lyon: ['Lyon 1er', 'Lyon 2e', 'Lyon 3e', 'Lyon 4e', 'Lyon 5e', 'Lyon 6e', 'Lyon 7e', 'Lyon 8e', 'Lyon 9e'],
-    metropole: [
-      'Villeurbanne',
-      'Vénissieux',
-      'Vaulx-en-Velin',
-      'Bron',
-      'Saint-Priest',
-      'Caluire-et-Cuire',
-      'Rillieux-la-Pape',
-      'Décines-Charpieu',
-      'Meyzieu',
-      'Oullins-Pierre-Bénite',
-      'Saint-Fons',
-      'Écully',
-      'Tassin-la-Demi-Lune',
-      'Sainte-Foy-lès-Lyon',
-      'Givors',
-      'Corbas',
-    ],
-    rhone: ['Villefranche-sur-Saône', 'Tarare', 'Brignais', 'Genas', 'Mions', 'Saint-Genis-Laval', 'Chaponost', 'Neuville-sur-Saône'],
-  },
   /** Date de publication des guides (contenu rédigé le 2026-10-17). */
   published: '2026-10-17',
 } as const;
 
-/** Communes principales, pour les mentions courtes (pied de page, hero). */
-export const mainCities = ['Lyon', 'Villeurbanne', 'Vénissieux', 'Vaulx-en-Velin', 'Bron', 'Saint-Priest', 'Caluire-et-Cuire', 'Villefranche-sur-Saône'];
+/** Zones d'intervention, pour les mentions courtes (pied de page, accueil, contact). */
+export const mainCities = ['Lyon', 'Partout en France'];
 
 export const nav = [
   { href: '/services/', label: 'Services' },
