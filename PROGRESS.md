@@ -32,7 +32,8 @@ Construit et vérifié : 21 pages indexables, 0 défaut SEO (titres ≤ 60, desc
 ## À obtenir du client
 
 - [ ] Confirmer le téléphone `06 24 49 04 96` (mobile français ? WhatsApp sur ce numéro ?)
-- [ ] Nom de domaine → `site.baseUrl` (provisoire : rhone-secu-protection.fr) + e-mail pro (contact@…) à la place de l'hotmail
+- [x] Nom de domaine : **rhone-secu.fr** (OVH, 2026-10-22) → `site.baseUrl` = https://www.rhone-secu.fr
+- [ ] E-mail pro (contact@rhone-secu.fr, MX Plan OVH à activer) à la place de l'hotmail
 - [ ] Adresse : si elle est publique, le JSON-LD passe en `ProfessionalService` (meilleur pour le SEO local) et on crée la fiche Google Business Profile
 - [ ] Services réellement assurés (cynophile ? SSIAP ? chantier ?) : retirer un `.md` + son entrée `SERVICE_META` si non
 - [ ] Disponibilités réelles : le site dit « jour, nuit, week-ends et jours fériés » ; ajouter « 24 h/24 » et un délai d'intervention seulement si c'est vrai
@@ -53,4 +54,4 @@ Search Console + envoi du sitemap, fiche Google Business Profile (catégorie « 
 
 ## Pas encore fait
 
-Pas de page Réalisations/Avis tant qu'il n'y a ni références ni avis réels. Nom de domaine à brancher dans Vercel puis à reporter dans `site.baseUrl`.
+Pas de page Réalisations/Avis tant qu'il n'y a ni références ni avis réels. Domaine rhone-secu.fr à brancher dans Vercel (projet `gardinage`) + DNS OVH : A `@` → 76.76.21.21, CNAME `www` → cname.vercel-dns.com.

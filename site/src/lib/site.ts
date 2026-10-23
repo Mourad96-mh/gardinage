@@ -12,8 +12,8 @@ export const site = {
   shortName: 'RSP',
   legalName: 'Rhône Sécu Protection',
   tagline: 'Société de sécurité privée à Lyon et partout en France',
-  // Domaine encore à choisir avec le client : sert aux canoniques, au sitemap et au JSON-LD.
-  baseUrl: 'https://www.rhone-secu-protection.fr',
+  // Domaine acheté chez OVH (2026-10-22) : sert aux canoniques, au sitemap et au JSON-LD.
+  baseUrl: 'https://www.rhone-secu.fr',
   email: 'lyoncasa@hotmail.fr',
   /** Format international sans espaces ni « + ». 06 24 49 04 96 lu comme un mobile français : à confirmer. */
   phone: '33624490496' as string,
@@ -34,7 +34,7 @@ export const site = {
   siret: '942 646 597 00016' as string,
   rcs: '' as string, // ex. RCS Lyon 000 000 000
   director: '' as string, // directeur de la publication
-  host: '' as string, // hébergeur : nom, adresse, téléphone
+  host: 'Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis — vercel.com' as string, // hébergeur : nom, adresse, téléphone
   locale: 'fr_FR',
   /** Date de publication des guides (contenu rédigé le 2026-10-17). */
   published: '2026-10-17',
