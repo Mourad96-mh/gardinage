@@ -42,7 +42,9 @@ async function main() {
   console.log(`▸ ${files.length} fichiers → ftp://${HOST}/${DIR}/`);
 
   // Un seul appel curl pour toute la liste : une connexion, -T/URL répétés.
-  const args = ['--silent', '--show-error', '--fail', '--ssl', '--ftp-create-dirs', '--user', `${USER}:${PASS}`];
+  // --fail-early : un mauvais mot de passe arrête tout au lieu de retenter 141 connexions
+  // (OVH bannit alors l'IP du serveur FTP pendant un moment).
+  const args = ['--silent', '--show-error', '--fail', '--fail-early', '--globoff', '--ssl', '--ftp-create-dirs', '--connect-timeout', '20', '--user', `${USER}:${PASS}`];
   for (const file of files) {
     const rel = path.relative(OUT, file).split(path.sep).map(encodeURIComponent).join('/');
     args.push('-T', file, `ftp://${HOST}/${DIR}/${rel}`);

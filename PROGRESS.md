@@ -47,11 +47,12 @@ Search Console + envoi du sitemap, fiche Google Business Profile (catégorie « 
 
 ## Mise en ligne OVH — à reprendre (2026-10-23)
 
-- [ ] OVH → Web Cloud → Hébergements → rhonesj… → Informations générales : activer le certificat SSL Let's Encrypt (le `.htaccess` force https, le site ne s'affiche pas sans).
-- [ ] Zone DNS rhone-secu.fr : supprimer les éventuels enregistrements Vercel (A 76.76.21.21, CNAME cname.vercel-dns.com) ; garder les valeurs OVH par défaut et les MX.
-- [ ] Onglet FTP-SSH : relever le login (souvent `rhonesj`), définir un mot de passe.
-- [ ] Mise en ligne : `cd site && npm run build && OVH_FTP_USER=rhonesj OVH_FTP_PASS='…' npm run deploy`
-- [ ] Vérifier https://www.rhone-secu.fr : redirections (http, sans www, slash final), page 404, mentions légales.
+- [x] SSL Let's Encrypt actif (vérifié le 2026-10-23 : un certificat pour rhone-secu.fr, un pour www, valides jusqu'au 20/01/2027).
+- [x] Zone DNS propre (vérifié le 2026-10-23) : rhone-secu.fr et www → 51.91.236.255 (cluster129), MX mx1/2/3.mail.ovh.net, aucun enregistrement Vercel.
+- [x] WordPress vierge pré-installé dans `www/` supprimé le 2026-10-23 (Modules en un clic → supprimer, base de données comprise).
+- [x] FTP : login `rhonesj`, mot de passe défini (à changer : il a circulé dans une conversation).
+- [x] Mise en ligne le 2026-10-23 : `cd site && npm run build && OVH_FTP_USER=rhonesj OVH_FTP_PASS='…' npm run deploy` (141 fichiers, ~100 s). Après trop d'échecs de connexion, OVH bloque l'IP sur le FTP du cluster129 (ports 21/22 muets) : passer par un autre réseau (partage 4G) ou attendre.
+- [x] Vérifié : http et sans www → https://www.rhone-secu.fr/ (301), slash final ajouté, 404 personnalisée, mentions légales avec OVH, sitemap/robots en ligne, HSTS actif.
 - [ ] Vercel : déconnecter ou supprimer le projet `gardinage` (gardinage.vercel.app = contenu en double).
 - [ ] Ensuite : Search Console + sitemap ; MX Plan → contact@rhone-secu.fr à mettre dans `site.email` ; formulaire de contact en PHP (l'hébergement OVH le permet).
 
@@ -64,4 +65,4 @@ Search Console + envoi du sitemap, fiche Google Business Profile (catégorie « 
 
 ## Pas encore fait
 
-Pas de page Réalisations/Avis tant qu'il n'y a ni références ni avis réels. Première mise en ligne sur OVH (`npm run deploy`) puis SSL Let's Encrypt à activer dans l'hébergement.
+Pas de page Réalisations/Avis tant qu'il n'y a ni références ni avis réels.

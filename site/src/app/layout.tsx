@@ -20,6 +20,8 @@ export const metadata: Metadata = {
   title: { default: `${site.name} — sécurité privée à Lyon`, template: '%s' },
   description: site.tagline,
   formatDetection: { telephone: false },
+  // Search Console (propriété https://www.rhone-secu.fr)
+  verification: { google: '1tL7tL5Rubes52uTgl6NrZi_pQ7_ZeUwQmpZ35lkBuY' },
 };
 
 export const viewport: Viewport = {
