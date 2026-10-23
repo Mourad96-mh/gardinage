@@ -45,6 +45,16 @@ Construit et vérifié : 21 pages indexables, 0 défaut SEO (titres ≤ 60, desc
 
 Search Console + envoi du sitemap, fiche Google Business Profile (catégorie « Service de sécurité », zone desservie), inscriptions annuaires (PagesJaunes, 118712) avec le même NAP, demande d'avis clients.
 
+## Mise en ligne OVH — à reprendre (2026-10-23)
+
+- [ ] OVH → Web Cloud → Hébergements → rhonesj… → Informations générales : activer le certificat SSL Let's Encrypt (le `.htaccess` force https, le site ne s'affiche pas sans).
+- [ ] Zone DNS rhone-secu.fr : supprimer les éventuels enregistrements Vercel (A 76.76.21.21, CNAME cname.vercel-dns.com) ; garder les valeurs OVH par défaut et les MX.
+- [ ] Onglet FTP-SSH : relever le login (souvent `rhonesj`), définir un mot de passe.
+- [ ] Mise en ligne : `cd site && npm run build && OVH_FTP_USER=rhonesj OVH_FTP_PASS='…' npm run deploy`
+- [ ] Vérifier https://www.rhone-secu.fr : redirections (http, sans www, slash final), page 404, mentions légales.
+- [ ] Vercel : déconnecter ou supprimer le projet `gardinage` (gardinage.vercel.app = contenu en double).
+- [ ] Ensuite : Search Console + sitemap ; MX Plan → contact@rhone-secu.fr à mettre dans `site.email` ; formulaire de contact en PHP (l'hébergement OVH le permet).
+
 ## Dépôt et déploiement
 
 - Dépôt propre à ce dossier (imbriqué dans le dépôt Bureau) : **github.com/Mourad96-mh/gardinage** (public, branche `main`). Le credential helper gh est posé en local : faire `gh auth switch -u Mourad96-mh` avant de pousser.
