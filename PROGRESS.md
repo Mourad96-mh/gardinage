@@ -49,9 +49,9 @@ Search Console + envoi du sitemap, fiche Google Business Profile (catégorie « 
 
 - Dépôt propre à ce dossier (imbriqué dans le dépôt Bureau) : **github.com/Mourad96-mh/gardinage** (public, branche `main`). Le credential helper gh est posé en local : faire `gh auth switch -u Mourad96-mh` avant de pousser.
 - Exclus du dépôt public : `file.txt`, les images WhatsApp d'origine et la plaquette CABSEC (document d'un concurrent).
-- Vercel, équipe `mourad2`, projet `gardinage`, **connecté au dépôt** avec Root Directory = `site` : chaque push sur `main` redéploie.
-- En ligne : **https://gardinage.vercel.app** (provisoire, sans le n° CNAPS : à ne pas communiquer publiquement avant de l'avoir renseigné).
+- **Hébergement de production : OVH** (choix du client le 2026-10-23), domaine et hébergement `rhonesj.cluster129.hosting.ovh.net` chez OVH. Mise en ligne : `npm run build` puis `OVH_FTP_USER=… OVH_FTP_PASS=… npm run deploy` (FTP vers `www/`, identifiants dans l'espace client OVH → FTP-SSH, jamais dans le dépôt). `public/.htaccess` force https://www., le slash final et la page 404.
+- Ancien aperçu Vercel (projet `gardinage`, https://gardinage.vercel.app) : plus utilisé, toujours redéployé à chaque push. À déconnecter ou supprimer (contenu en double).
 
 ## Pas encore fait
 
-Pas de page Réalisations/Avis tant qu'il n'y a ni références ni avis réels. Domaine rhone-secu.fr à brancher dans Vercel (projet `gardinage`) + DNS OVH : A `@` → 76.76.21.21, CNAME `www` → cname.vercel-dns.com.
+Pas de page Réalisations/Avis tant qu'il n'y a ni références ni avis réels. Première mise en ligne sur OVH (`npm run deploy`) puis SSL Let's Encrypt à activer dans l'hébergement.

@@ -34,7 +34,7 @@ export const site = {
   siret: '942 646 597 00016' as string,
   rcs: '' as string, // ex. RCS Lyon 000 000 000
   director: '' as string, // directeur de la publication
-  host: 'Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis — vercel.com' as string, // hébergeur : nom, adresse, téléphone
+  host: 'OVH SAS, 2 rue Kellermann, 59100 Roubaix, France — 1007 (ovhcloud.com)' as string, // hébergeur : nom, adresse, téléphone
   locale: 'fr_FR',
   /** Date de publication des guides (contenu rédigé le 2026-10-17). */
   published: '2026-10-17',
